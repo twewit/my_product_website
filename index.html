@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocel's Delicacies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+        }
+        .menu-category {
+            margin-bottom: 2rem;
+        }
+        .category-title {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .menu-item-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        .menu-item-sizes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+        }
+        .size-option {
+            text-align: center;
+        }
+        .size-name {
+            font-weight: bold;
+            color: #4b5563;
+        }
+        .size-price {
+            color: #1f2937;
+        }
+        .order-button-container {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background-color: #fef3c7;
+            border-radius: 0.5rem;
+        }
+        .order-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #ea580c;
+            border: none;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(234, 88, 12, 0.25);
+        }
+        .order-button:hover {
+            background-color: #c2410c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(234, 88, 12, 0.3);
+        }
+        .order-button-text {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .order-button-subtext {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rocel's Delicacies</h1>
+            <p class="subtitle">Price List</p>
+        </header>
+
+        <main>
+            <section class="menu-category">
+                <h2 class="category-title">Ulam</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Korean Chicken</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small(30Pcs)</span>
+                                <p class="size-price">P1000.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium(50Pcs)</span>
+                                <p class="size-price">P1500.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large(80Pcs)</span>
+                                <p class="size-price">P2500</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Lumpiang Shanghai</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Per Peice</span>
+                                <p class="size-price">P9.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">100 Pieces</span>
+                                <p class="size-price">P900.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Fish Fillet</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Medium Bilao</span>
+                                <p class="size-price">P1500.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large Bilao</span>
+                                <p class="size-price">P2500.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Embutido(Pork/Chicken)</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Per Piece</span>
+                                <p class="size-price">P120.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Cordon Bleu</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Per Peice</span>
+                                <p class="size-price">P120.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+            <section class="menu-category">
+                <h2 class="category-title">Pancit</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Sotanghon</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">$13.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">$16.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">$19.99</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Bihon</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">$13.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">$16.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">$19.99</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Canton</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">$13.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">$16.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">$19.99</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-category">
+                <h2 class="category-title">Pasta</h2>
+                <ul class="menu-list">
+                                        <li class="menu-item">
+                        <h3 class="menu-item-title">Spaghetti</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">$13.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">$16.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">$19.99</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Carbonara</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">$13.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">$16.99</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">$19.99</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-category">
+                <h2 class="category-title">Kakanin</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Maja Blanca</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">P500.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">P700.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">P800.00</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Sapin-Sapin</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Small</span>
+                                <p class="size-price">P450.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">P700.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">P850.00</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Pichi-Pichi</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Medium</span>
+                                <p class="size-price">P650.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Large</span>
+                                <p class="size-price">P800.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                                        <li class="menu-item">
+                        <h3 class="menu-item-title">Suman</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Per Piece</span>
+                                <p class="size-price">P9.00</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu-category">
+                <h2 class="category-title">Gelatin</h2>
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Strawberry Pineapple</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Tub</span>
+                                <p class="size-price">P60.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name">Tray</span>
+                                <p class="size-price">P400.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="menu-item-title">Leche Flan</h3>
+                        <div class="menu-item-sizes">
+                            <div class="size-option">
+                                <span class="size-name">Per Tub</span>
+                                <p class="size-price">P60.00</p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"></span>
+                                <p class="size-price"> </p>
+                            </div>
+                            <div class="size-option">
+                                <span class="size-name"> </span>
+                                <p class="size-price"> </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+
+        <section class="order-button-container">
+            <a href="https://www.facebook.com/rocel.calica.7" class="order-button">
+                <span class="order-button-text">Message Me for Orders</span>
+                <span class="order-button-subtext">Rocel Calica</span>
+            </a>
+        </section>
+    </div>
+</body>
+</html>
